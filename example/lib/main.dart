@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:smart_grid_view_nls/smart_grid_view.dart';
+import 'package:smart_grid_view_nls/smart_grid_view_nls.dart';
 
 void main() {
   return runApp(const MyApp());
