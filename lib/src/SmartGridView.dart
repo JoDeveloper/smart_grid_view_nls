@@ -6,24 +6,24 @@ class SmartGridView extends StatelessWidget {
   final double tileHeight;
   final List<Widget> children;
   final Axis scrollDirection;
-  final bool primary;
+  final bool? primary;
   final bool reverse;
   final bool shrinkWrap;
-  final ScrollPhysics physics;
-  final EdgeInsetsGeometry padding;
+  final ScrollPhysics? physics;
+  final EdgeInsetsGeometry? padding;
   final double mainAxisSpacing;
   final double crossAxisSpacing;
   final bool addAutomaticKeepAlives;
   final bool addRepaintBoundaries;
   final bool addSemanticIndexes;
-  final double cacheExtent;
-  final int semanticChildCount;
+  final double? cacheExtent;
+  final int? semanticChildCount;
   final DragStartBehavior dragStartBehavior;
 
   const SmartGridView({
-    Key key,
-    @required this.tileWidth,
-    @required this.tileHeight,
+    Key? key,
+    required this.tileWidth,
+    required this.tileHeight,
     this.children = const <Widget>[],
     this.scrollDirection = Axis.vertical,
     this.primary,
