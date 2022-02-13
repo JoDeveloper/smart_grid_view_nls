@@ -14,20 +14,24 @@ The `tileHeight` is used with `tileWidth` to calculate `gridChildRatio`.
 
 ```dart
 class MyApp extends StatelessWidget {
+  const MyApp({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
-        appBar: AppBar(title: Text('Example')),
+        appBar: AppBar(title: const Text('Example')),
         body: SmartGridView(
           tileWidth: 128,
           tileHeight: 168,
-          children: List.generate(80, (index) => Card(
-            child: GridTile(
-              child: Text('tile #$index'),
+          children: List.generate(
+            80,
+            (index) => Card(
+              child: GridTile(
+                child: Text('tile #$index'),
+              ),
             ),
-          )),
+          ),
         ),
       ),
     );
